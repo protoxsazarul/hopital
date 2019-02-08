@@ -1,0 +1,116 @@
+
+body {
+	margin: 0;
+}
+	
+header {
+	background-color: #E9F7FA;
+}
+/* Contient les six boutons */
+
+.conteneur {
+	background-image: url("corps.png");
+	width: 140px;
+	height: 500px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+/* Gere la mise en forme des boutons, couleurs, taille etc..*/
+.bouton {
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	border:none;
+	color:#fff;
+	opacity: 0.5;
+	cursor: help;
+}
+
+/* Pour placer précisement chaques boutons */
+#bouton1 {
+	position: relative;
+	top: 16%;
+	left: -13%;
+}
+
+#bouton2 {
+	position: relative;
+	top: 31%;
+	right: -18%;
+}
+#bouton3 {
+	position: relative;
+	top: 31%;
+	left: -18%;
+}
+#bouton4 {
+	position: relative;
+	top: 31%;
+	right: 1%;
+}
+#bouton5 {
+	position: relative;
+	top: 44%;
+	left: 6%;
+}
+#bouton6 {
+	position: relative;
+	top: 61%;
+	left: -10%;
+}
+
+.rouge {
+	background-color: red;
+}
+
+.text {
+	display: flex;
+	text-align: justify;
+	width: auto;
+	flex-direction: column;
+	
+}
+.texte {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+.text {
+	display: none;
+	text-align: justify;
+	width: auto;
+	flex-direction: column;
+	
+}
+#page {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height:100vh;
+}
+
+footer {
+	background-color: #E9F7FA;
+	margin-top: 20%;
+	font-family: 'Arvo', serif;
+}
+
+/*Placement des block en grid*/
+@media screen and (min-width: 350px) {
+	body{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-areas: 
+				"titre titre"
+				"conteneur text"
+				"footer footer"
+	}
+
+}
+
+

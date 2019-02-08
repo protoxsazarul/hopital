@@ -1,0 +1,122 @@
+body {
+    text-align: center;
+    margin-top: 3%;
+    font-family: 'Arvo', serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "titre"
+        "conteneur"
+        "description"
+        "footer"
+}
+
+/* Contient les six boutons */
+
+.titre {
+    grid-area: titre;
+}
+
+.conteneur {
+    background-image: url("corps.png");
+    width: 140px;
+    height: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: conteneur;
+}
+
+.piedepage {
+    grid-area: footer
+}
+
+/* Gere la mise en forme des boutons, couleurs, taille etc..*/
+.bouton {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    opacity: 0.5;
+    cursor: help;
+    user-select: none;
+}
+
+/* Pour placer précisement chaques boutons */
+#bouton1 {
+    position: relative;
+    top: 16%;
+    left: -13%;
+}
+
+#bouton2 {
+    position: relative;
+    top: 31%;
+    right: -18%;
+}
+
+#bouton3 {
+    position: relative;
+    top: 31%;
+    left: -18%;
+}
+
+#bouton4 {
+    position: relative;
+    top: 31%;
+    right: 1%;
+}
+
+#bouton5 {
+    position: relative;
+    top: 44%;
+    left: 6%;
+}
+
+#bouton6 {
+    position: relative;
+    top: 61%;
+    left: -10%;
+}
+
+.rouge {
+    background-color: red;
+}
+
+.text {
+    display: none;
+    text-align: justify;
+    width: auto;
+    grid-area: description;
+}
+
+footer {
+    background-color: #E9F7FA;
+    margin-top: 20%;
+    font-family: 'Arvo', serif;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "titre titre"
+            "conteneur description"
+            "footer footer"
+    }
+
+    .conteneur {
+        margin-left: 0px margin-right: auto;
+        grid-area: conteneur;
+    }
+
+    .text {
+        display: none;
+        text-align: justify;
+        width: 60%;
+
+    }
+
+}
